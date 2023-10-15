@@ -7,7 +7,7 @@ const App = () => {
 
   return (
     <main>
-      <List />
+      <List people={people} />
     </main>
   );
 };

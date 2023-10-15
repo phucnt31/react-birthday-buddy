@@ -5,9 +5,13 @@ import List from "./List";
 const App = () => {
   const [people, setPeople] = useState(data);
 
+  const clearList = () => {
+    setPeople([]);
+  };
+
   return (
     <main>
-      <List people={people} />
+      <List people={people} clearList={clearList} />
     </main>
   );
 };
